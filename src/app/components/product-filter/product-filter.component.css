@@ -1,0 +1,28 @@
+.product-filter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(171, 171, 171);
+  border-radius: 22px;
+  background: rgb(204, 227, 222);
+  width: 450px;
+  height: 150px;
+}
+.filter-inputs {
+  display: flex;
+  flex-direction: column;
+  margin-right: 30px;
+}
+.filter-ranges {
+  display: flex;
+  flex-direction: column;
+}
+.edgeValues {
+  width: 185px;
+  display: flex;
+  justify-content: space-between;
+}
+.edgeValues > label {
+  font-weight: 400;
+}

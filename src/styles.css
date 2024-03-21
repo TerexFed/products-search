@@ -1,1 +1,85 @@
-/* You can add global styles to this file, and also import other style files */
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: #ecf4f4;
+}
+label {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0%;
+}
+input {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(171, 171, 171);
+  border-radius: 22px;
+  background: rgb(255, 255, 255);
+  padding: 5px 0 5px 10px;
+  color: rgb(123, 123, 123);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0%;
+  outline: none;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; 
+  width: 185px; 
+  height: 7px; 
+  background: rgb(255, 255, 255);
+  border-radius: 22px; 
+}
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none; 
+  width: 15px; 
+  height: 15px; 
+  background: rgb(164, 195, 178); 
+  border-radius: 50%;
+  cursor: pointer; 
+  border: 1px solid rgb(0, 0, 0);
+}
+select {
+  box-sizing: border-box;
+  border: 0.5px solid rgb(171, 171, 171);
+  border-radius: 22px;
+  background: rgb(255, 255, 255);
+  padding: 5px 0 5px 10px;
+  color: rgb(123, 123, 123);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0%;
+  outline: none;
+}
+p {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 15px;
+  letter-spacing: 0%;
+  text-align: left;
+  box-sizing: border-box;
+  border: 0.5px solid rgb(171, 171, 171);
+  border-radius: 22px;
+  background: rgb(164, 195, 178);
+  padding: 5px 10px 5px 10px;
+  width: 90%;
+  margin: 15px 0 15px 0;
+}
+span {
+  color: rgb(0, 0, 0);
+  font-family: Inter;
+  font-size: 10px;
+  font-weight: 400;
+  line-height: 12px;
+  letter-spacing: 0%;
+  text-align: left;
+}

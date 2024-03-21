@@ -1,0 +1,18 @@
+<div class="product-item">
+  <img [src]="image" alt="product-image" />
+  <p>Title: {{ title }}</p>
+  <p>Category: {{ category }}</p>
+  <p>Price: {{ price }}$</p>
+  <p class="stars">
+    <span
+      >@for (item of getSolidStars(); track $index) {
+      <i class="fa-solid fa-star"></i>
+      }</span
+    >
+    <span
+      >@for (item of getRegularStarts(); track $index) {
+      <i class="fa-regular fa-star"></i>
+      }</span
+    >
+  </p>
+</div>

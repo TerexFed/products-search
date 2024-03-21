@@ -1,0 +1,21 @@
+.product-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 50px;
+  margin-top: 60px;
+}
+@media (width <= 1080px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media (width <= 810px) {
+  .product-list {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media (width <= 525px) {
+  .product-list {
+    grid-template-columns: 1fr;
+  }
+}

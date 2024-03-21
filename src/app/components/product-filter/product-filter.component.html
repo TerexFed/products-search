@@ -1,0 +1,47 @@
+<div class="product-filter">
+  <div class="filter-inputs">
+    <label>Search title</label>
+    <input
+      type="text"
+      placeholder="Pro"
+      [(ngModel)]="ProductService.productName"
+    />
+    <label>Search category</label>
+    <select [(ngModel)]="ProductService.categoryName">
+      <option [selected]="true" value="all">All</option>
+      @for (category of ProductService.categoryList; track $index) {
+      <option [value]="category">{{ category }}</option>
+      }
+    </select>
+  </div>
+  <div class="filter-ranges">
+    <label
+      >Price range: <span>{{ ProductService.priceVal }}$</span></label
+    >
+    <div class="edgeValues">
+      <label>0$</label>
+      <label>{{ProductService.maxPrice}}$</label>
+    </div>
+    <input
+      type="range"
+      min="0"
+      step="50"
+      [max]="ProductService.maxPrice"
+      [(ngModel)]="ProductService.priceVal"
+    />
+    <label
+      >Rating range: <span>{{ ProductService.ratingVal }}</span></label
+    >
+    <div class="edgeValues">
+      <label>1</label>
+      <label>5</label>
+    </div>
+    <input
+      type="range"
+      min="1"
+      max="5"
+      step="1"
+      [(ngModel)]="ProductService.ratingVal"
+    />
+  </div>
+</div>

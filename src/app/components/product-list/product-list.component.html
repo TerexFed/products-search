@@ -1,0 +1,11 @@
+<div class="product-list">
+  @for (product of ProductsService.filteredProducts(); track $index) {
+  <app-product-item
+    [image]="product.thumbnail"
+    [title]="product.title"
+    [category]="product.category"
+    [price]="product.price"
+    [rating]="product.rating"
+  />
+  }
+</div>
